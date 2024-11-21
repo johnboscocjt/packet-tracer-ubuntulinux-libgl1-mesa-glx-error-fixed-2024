@@ -34,50 +34,56 @@ This guide provides step-by-step instructions for installing Cisco Packet Tracer
 - Run the following command to install the Packet Tracer package:
 ```bash
 sudo dpkg -i ~/Downloads/Packet_Tracer822_amd64_signed.deb
+```
 
-Step 6: Update Ubuntu Package Lists
+### Step 6: Update Ubuntu Package Lists
 Update your system’s package lists to ensure all packages are up-to-date:
-bash
-Copy code
+```bash
 sudo apt-get update
+```
 This command ensures Ubuntu can fetch the latest package information from the repositories.
 
-Step 7: Check for Missing Dependencies
+
+### Step 7: Check for Missing Dependencies
 If the installation fails, identify missing dependencies. For example:
 To check for libgl1-mesa-glx, run:
-bash
-Copy code
+```bash
 apt-cache search libgl1-mesa-glx
-Interpret the results:
+```
+
+### Interpret the results:
 No results returned: The package is unavailable in your current repositories.
 Result includes:
-go
-Copy code
 libgl1-mesa-glx - transitional dummy package
 This means the package is available, and you can proceed.
-Step 8: Install Required Dependencies
+
+### Step 8: Install Required Dependencies
 If dependencies such as libxcb-xinerama0-dev are missing, install them using:
-bash
-Copy code
+```bash
 sudo apt install libxcb-xinerama0-dev
+```
 This command installs the required library, resolving the missing dependency issue.
-Step 9: Final Installation
+
+### Step 9: Final Installation
 Re-run the installation command for Cisco Packet Tracer:
-bash
-Copy code
+```bash
 sudo dpkg -i ~/Downloads/Packet_Tracer822_amd64_signed.deb
+```
 This step completes the installation process, ensuring all required dependencies are resolved.
-Post-Installation
+
+### Post-Installation
 Launch Cisco Packet Tracer by searching for it in your applications menu or using the following command in the terminal:
-bash
-Copy code
 packettracer
-Troubleshooting
+
+### Troubleshooting
 If additional errors occur during installation, check the missing dependencies and install them using:
-bash
-Copy code
+```bash
 sudo apt install <dependency-name>
+```
+
 Repeat the installation process until all dependencies are resolved.
-Proudly Created By
+
+Proudly Created By:
 Johnboscocjt
+"Created To Create Dont Hesistate, You Are Abnormal!..."
 
