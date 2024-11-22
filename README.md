@@ -43,6 +43,11 @@ sudo apt-get update
 ```
 This command ensures Ubuntu can fetch the latest package information from the repositories.
 
+Upgrade your system’s package lists to ensure all packages are up-to-date:
+```bash
+sudo apt-get upgrade
+```
+
 
 ### Step 7: Check for Missing Dependencies
 If the installation fails, identify missing dependencies. For example:
